@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Application Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>PRESENTATION ON PHONE PAY</h2>
+    <form id="jobForm">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="position">Position Applied For</label>
+      <select id="position" name="position" required>
+        <option value="">--Select--</option>
+        <option value="frontend">Introduction of Python</option>
+        <option value="backend">Why use Python</option>
+        <option value="fullstack">Which Language use in Phone pay</option>
+        <option value="tester">Key POint</option>
+      </select>
+
+      <label for="resume">Upload Slide</label>
+      <input type="file" id="resume" name="resume" required>
+
+      <label for="cover">Other Skill</label>
+      <textarea id="cover" name="cover" rows="4" required></textarea>
+
+      <button type="submit">Submit Slide</button>
+    </form>
+    <p id="message"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
